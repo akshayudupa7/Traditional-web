@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 import { FaHeadset } from "react-icons/fa6";
 import Link from "next/link";
 import "./index.css";
-const Header=()=>{
+const Header = () => {
   return (
     <div style={{ backgroundColor: "#07273c" }}>
       <Stack
@@ -27,7 +27,7 @@ const Header=()=>{
             <FaHeadset style={{ color: "#fff", fontSize: "24px" }} />
             <Typography
               variant="body1"
-              sx={{ color: "#ff7010", fontSize: "14px" ,marginLeft:2}}
+              sx={{ color: "#ff7010", fontSize: "14px", marginLeft: 2 }}
             >
               Call Us: <span style={{ color: "#fff" }}>9353066802</span>
             </Typography>
@@ -104,5 +104,5 @@ const Header=()=>{
       </Stack>
     </div>
   );
-}
-export default Header
+};
+export default Header;

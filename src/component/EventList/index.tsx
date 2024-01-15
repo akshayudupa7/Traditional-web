@@ -64,13 +64,15 @@ export default function Index() {
         </Typography>
         <Box>
           <Grid container>
-            {val.map((item) => (
-              <Grid item xs={12} md={3}>
-                {" "}
-                {/* Add a unique key for each item */}
-                <Boxes data={item} />
-              </Grid>
-            ))}
+            {val.map((item) => {
+              return (
+                <Grid item xs={12} md={3}>
+                  {" "}
+                  {/* Add a unique key for each item */}
+                  <Boxes data={item} />
+                </Grid>
+              );
+            })}
           </Grid>
         </Box>
       </Box>

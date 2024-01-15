@@ -38,7 +38,7 @@ export default function Index({ data }: { data: DataProps }) {
         >
           {data.name}
         </Typography>
-        <Typography>hello</Typography>
+
         <Box
           sx={{
             borderTop: "3px solid #ff7010",
