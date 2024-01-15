@@ -1,16 +1,14 @@
 import React from "react";
 import Main from "@/component/Main";
 import Header from "@/component/Header";
-import Footer from "@/component/Footer"
-
+import { Box } from "@mui/material";
 export default function Page() {
   return (
     <>
       <div>
-    
-       <Header/>
+        <Header />
+
         <Main />
-  
       </div>
     </>
   );

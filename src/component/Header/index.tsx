@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { Stack, Typography, Box } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 import { FaHeadset } from "react-icons/fa6";
 import Link from "next/link";
 import "./index.css";
-export default function Header() {
+const Header=()=>{
   return (
     <div style={{ backgroundColor: "#07273c" }}>
       <Stack
@@ -103,3 +105,4 @@ export default function Header() {
     </div>
   );
 }
+export default Header
