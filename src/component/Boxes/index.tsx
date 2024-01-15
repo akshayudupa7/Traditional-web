@@ -18,7 +18,7 @@ interface DataProps {
 // Use the defined interface as the type for the 'data' prop
 export default function Index({ data }: { data: DataProps }) {
   return (
-    <div style={{ width: "100%",marginTop:'40px' }}>
+    <div style={{ width: "100%", marginTop: "40px" }}>
       <Box
         sx={{
           backgroundColor: "#07273c",
@@ -26,13 +26,12 @@ export default function Index({ data }: { data: DataProps }) {
           borderRadius: "4px",
           width: "96%",
           height: "300px",
-          padding:"40px 0px"
+          padding: "40px 0px",
         }}
       >
-        <Box sx={{width:"100%",display:"flex",justifyContent:"center"}}>
-        <Image src={data.icon} width={100} height={60} alt="this is image" />
+        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+          <Image src={data.icon} width={100} height={60} alt="this is image" />
         </Box>
-      
 
         <Typography
           sx={{ color: "#fff", textAlign: "center", fontSize: "18px" }}
@@ -60,7 +59,16 @@ export default function Index({ data }: { data: DataProps }) {
         </Typography>
 
         <Link href="" style={{ textAlign: "center" }}>
-          <Typography sx={{ textAlign: "center",marginTop:"20px"}}>Read More</Typography>
+          <Typography
+            sx={{
+              textAlign: "center",
+              marginTop: "20px",
+              color: "#ff7010",
+              "&:hover": { color: "#fff" },
+            }}
+          >
+            Read More
+          </Typography>
         </Link>
       </Box>
     </div>

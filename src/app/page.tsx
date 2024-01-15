@@ -4,6 +4,7 @@ import Header from "@/component/Header";
 import Footer from "@/component/Footer"
 import { Roboto } from "next/font/google";
 import EventList from "@/component/EventList"
+import Choose from "@/component/Choose"
 const roboto=Roboto({
   weight:'100',
   subsets:['latin'],
@@ -15,6 +16,7 @@ export default function Page() {
       <div className={roboto.className}>
         <Main />
         <EventList/>
+        <Choose/>
       </div>
     </>
   );
