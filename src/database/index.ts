@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-
+ 
 const ConnectToDb=async()=>{
      const connectionSrt="mongodb+srv://akshayudupa7:kaimarakshay@cluster0.xzqhaev.mongodb.net/"
      

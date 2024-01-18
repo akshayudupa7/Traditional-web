@@ -7,7 +7,8 @@ const EventSchema=new mongoose.Schema({
        para:String,
        price:Number,
        help:String,
-       icon:String
+       icon:String,
+       category:String
 })
 
 const Event=mongoose.models.Events || mongoose.model("Events",EventSchema)

@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -8,7 +8,7 @@ import Boxes from "@/component/Boxes";
 
 interface Event {
   name: string;
-  imageUrl: string; // Corrected to lowercase 'string'
+  imageUrl: string;
   description: string;
   para: string;
   price: number;
@@ -21,7 +21,7 @@ export default function Index() {
     getInfo();
   }, []);
 
-  const [val, setVal] = useState<Event[]>([]); // Specify the type as an array of Event
+  const [val, setVal] = useState<Event[]>([]);
 
   const getInfo = async () => {
     try {
@@ -63,16 +63,12 @@ export default function Index() {
           our services today!
         </Typography>
         <Box>
-          <Grid container>
-            {val.map((item) => {
-              return (
-                <Grid item xs={12} md={3}>
-                  {" "}
-                  {/* Add a unique key for each item */}
-                  <Boxes data={item} />
-                </Grid>
-              );
-            })}
+          <Grid container spacing={3}> {/* Added spacing prop */}
+            {val.map((item) => (
+              <Grid item key={item.name} xs={12} md={3}>
+                <Boxes data={item} />
+              </Grid>
+            ))}
           </Grid>
         </Box>
       </Box>

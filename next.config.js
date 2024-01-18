@@ -2,7 +2,7 @@
 const nextConfig = {
 
     images:{
-        domains:['www.harigurus.com']
+        domains:['www.harigurus.com','anuragsinghbam.com','kamleshyadav.com']
     }
 }
 
