@@ -15,7 +15,7 @@ interface FormData {
   mobile: string;
   email: string;
   question: string;
-  [key: string]: string; // Index signature allowing any string key
+  [key: string]: string; 
 }
 
 export default function Page() {

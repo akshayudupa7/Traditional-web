@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { FaHeadset } from "react-icons/fa6";
 import Link from "next/link";
+import Modals from "@/component/Modals"
 import "./index.css";
 const Header = () => {
   return (
@@ -89,7 +90,7 @@ const Header = () => {
               Contact
             </Typography>
           </Link>
-          <Link href="/sign" style={{ textDecoration: "none" }}>
+          <Link href="" style={{ textDecoration: "none" }}>
             <Typography
               sx={{
                 color: "#fff",
@@ -97,7 +98,7 @@ const Header = () => {
                 "&:hover": { borderTop: "2px solid #ff7010", color: "#ff7010" },
               }}
             >
-              Sign In
+           <Modals/>
             </Typography>
           </Link>
         </Stack>
