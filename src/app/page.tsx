@@ -18,7 +18,7 @@ export default function Page() {
     <>
       <div className={roboto.className}>
         <Main />
-
+        <EventList/>
         <Reviews />
         <Rcenet />
       </div>

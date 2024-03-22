@@ -2,7 +2,7 @@ import ConnectToDb from "@/database";
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 import Event from "@/model/events";
-export async function GET(req: Request) {
+export async function GET(req:any) {
   try {
     await ConnectToDb();
     const { searchParams } = new URL(req.url);
