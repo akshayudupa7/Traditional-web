@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div style={{backgroundColor:"#031d2e"}}>
       <Box sx={{width:"90%",margin:"auto"}}>
-        <Typography variant="h5" sx={{color:"#fff",padding:"40px 0px",fontSize:"26px",textAlign:"center"}}>About</Typography>
+        <Typography variant="h5" sx={{color:"#fff",padding:"40px 0px",fontSize:"26px",textAlign:"center"}}></Typography>
 
         <Box>
           <Grid container gap={8}>
