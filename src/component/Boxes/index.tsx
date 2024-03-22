@@ -59,7 +59,7 @@ export default function Index({ data }: { data: DataProps }) {
           {data.para}
         </Typography>
 
-        <Link href="" style={{ textAlign: "center" }}>
+        <Link href={`/services/${data.name}`} style={{ textAlign: "center" }}>
           <Typography
             sx={{
               textAlign: "center",

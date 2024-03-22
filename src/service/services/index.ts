@@ -1,7 +1,7 @@
 export const getService=async()=>{
 
     try{
-        const data=await fetch('http://localhost:3000/api/service',{
+        const data=await fetch('/api/service',{
             method:'GET'
         },
         )

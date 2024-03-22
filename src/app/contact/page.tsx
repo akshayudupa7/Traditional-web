@@ -15,7 +15,7 @@ interface FormData {
   mobile: string;
   email: string;
   question: string;
-  [key: string]: string; 
+  [key: string]: string;
 }
 
 export default function Page() {
@@ -26,11 +26,10 @@ export default function Page() {
     question: "",
   };
 
-
   const [val, setVal] = useState([]);
   const [form, setForm] = useState<FormData>(initial);
-  const onSubmit = async() => {
-    const data=await addFeedback(form)
+  const onSubmit = async () => {
+    const data = await addFeedback(form);
   };
   return (
     <div style={{ width: "100%" }}>
@@ -42,7 +41,7 @@ export default function Page() {
             color: "#fff",
             textAlign: "center",
             paddingTop: "40px",
-            paddingBottom:"70px"
+            paddingBottom: "70px",
           }}
         >
           Contact
@@ -98,22 +97,25 @@ export default function Page() {
           <Grid item xs={12} md={6}>
             <Box
               sx={{
-                backgroundColor: "red",
+                backgroundColor: "#031d2e",
                 padding: "30px 0px",
                 position: "relative",
                 top: "60px",
-          
-                width:'100%'
+
+                width: "100%",
               }}
             >
-              <Typography variant="h6" sx={{ color: "#fff", fontSize: "22px",textAlign:"center"}}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#fff", fontSize: "22px", textAlign: "center" }}
+              >
                 Have A Question / Feedback?
               </Typography>
               <Box
                 sx={{
                   marginTop: "30px",
-                  margin:"auto",
-                  width:"70%"
+                  margin: "auto",
+                  width: "70%",
                 }}
               >
                 {FeedbackForm.map((item) => (
@@ -127,27 +129,24 @@ export default function Page() {
                   />
                 ))}
               </Box>
-             <Box sx={{width:'100%'}}>
-                <Box sx={{width:"70%",margin:'auto'}}>
-                <button
-                style={{
-                  backgroundColor: "orange",
-                  color: "#fff",
-                  border: "none",
-                  width: "100%",
-                  height: "40px",
-                  marginTop: "40px",
-                  marginBottom: "20px",
-                }}
-                onClick={onSubmit}
-              >
-                Save
-              </button>
+              <Box sx={{ width: "100%" }}>
+                <Box sx={{ width: "70%", margin: "auto" }}>
+                  <button
+                    style={{
+                      backgroundColor: "orange",
+                      color: "#fff",
+                      border: "none",
+                      width: "100%",
+                      height: "40px",
+                      marginTop: "40px",
+                      marginBottom: "20px",
+                    }}
+                    onClick={onSubmit}
+                  >
+                    Save
+                  </button>
                 </Box>
-         
-
-             </Box>
-         
+              </Box>
             </Box>
           </Grid>
         </Grid>

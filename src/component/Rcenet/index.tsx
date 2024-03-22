@@ -36,7 +36,7 @@ export default function Index() {
   return (
     <div style={{ backgroundColor: "#031d2e"}}>
       <Box>
-        <Typography variant="h5" sx={{ textAlign: "center",color:"#fff",fontSize:"26px",paddingTop:"30px",paddingBottom:"30px"}}>
+        <Typography variant="h5" sx={{ textAlign: "center",color:"#fff",fontSize:"26px",paddingTop:"120px",paddingBottom:"30px"}}>
           RECENT EVENTS
         </Typography>
         <Box

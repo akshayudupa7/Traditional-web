@@ -35,7 +35,7 @@ const Header = () => {
           </Box>
         </Stack>
         <Stack direction="row" sx={{ marginTop: 4, gap: 2 }}>
-          <Link href="/home" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
             <Typography
               sx={{
                 color: "#fff",

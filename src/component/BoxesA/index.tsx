@@ -19,15 +19,15 @@ interface DataProps {
 // Use the defined interface as the type for the 'data' prop
 export default function Index({ data }: { data: DataProps }) {
   return (
-    <div style={{ width: "100%", marginTop: "40px"}}>
+    <div style={{ width: "100%", marginTop: "60px"}}>
       <Box
         sx={{
           width: "96%",
-          height: "300px",
+        
           padding: "40px 0px",
         }}
       >
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Box sx={{ width: "100%", display: "flex", justifyContent: "center",height:"200px"}}>
           <Image src={data.imageUrl} width={100} height={60} layout="responsive" alt="this is image" />
         </Box>
           <Box sx={{marginTop:"20px",marginBottom:"20px"}}>

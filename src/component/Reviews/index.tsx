@@ -6,9 +6,14 @@ import Image from "next/image";
 
 export default function Index() {
   return (
-    <div style={{ backgroundColor: "#031d2e",paddingTop:"40px"}}>
-      <Box >
-        <Typography variant="h5" sx={{color:"#fff",fontSize:"26px",textAlign:"center"}}>WHAT OUR CUSTOMERS SAY</Typography>
+    <div style={{ backgroundColor: "#031d2e", paddingTop: "40px" }}>
+      <Box>
+        <Typography
+          variant="h5"
+          sx={{ color: "#fff", fontSize: "26px", textAlign: "center" }}
+        >
+          WHAT OUR CUSTOMERS SAY
+        </Typography>
         <Box
           sx={{
             borderTop: "3px solid #ff7010",
@@ -20,7 +25,7 @@ export default function Index() {
         ></Box>
       </Box>
 
-      <Box sx={{marginTop:"80px"}}>
+      <Box sx={{ marginTop: "80px" }}>
         <Grid container sx={{ width: "90%", margin: "auto" }}>
           <Grid item xs={12} md={4}>
             <Box
@@ -55,7 +60,7 @@ export default function Index() {
                   lineHeight: "24px",
                   textAlign: "center",
                   margin: "20px 0px 30px 0px",
-                  padding:"0px 20px"
+                  padding: "0px 20px",
                 }}
               >
                 We engaged prohits for my 11th day karma of my deceased mother
@@ -108,7 +113,7 @@ export default function Index() {
                   lineHeight: "24px",
                   textAlign: "center",
                   margin: "20px 0px 30px 0px",
-                  padding:"0px 20px"
+                  padding: "0px 20px",
                 }}
               >
                 We liked your professionalism, you were on time with regard to
@@ -162,7 +167,7 @@ export default function Index() {
                   lineHeight: "24px",
                   textAlign: "center",
                   margin: "20px 0px 30px 0px",
-                  padding:"0px 20px"
+                  padding: "0px 20px",
                 }}
               >
                 We are very happy with the outcome of your services, you are
